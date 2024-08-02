@@ -6,21 +6,22 @@ This project will runs on a cluster of AWS EC2 instances with the SunU-Hadoop-Im
 
 ## How to run?
 
+
 ### Environment Setup
 
-1. Switch to Hadoop user
+ 1. Switch to Hadoop user
 ```
 # Switch to the Hadoop user to gain necessary permissions for Hadoop administration tasks.
 sudo su - hadoop
 ```
 
-2. Format the Hadoop Distributed File System (HDFS) namenode
+ 2. Format the Hadoop Distributed File System (HDFS) namenode
 ```
 # Format the HDFS namenode to set up the filesystem for data storage across the cluster.
 hdfs namenode -format
 ```
 
-3. Start HDFS and YARN services
+ 3. Start HDFS and YARN services
 ```
 # Start all Hadoop services, including HDFS and YARN, to ensure the system is fully operational.
 start-all.sh
