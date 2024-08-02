@@ -82,7 +82,7 @@ ls stubs
 ```
 ### _MapReduce Apporach Using *JAVA* in Hadoop_
 
-#### MapReduce Execution
+- #### MapReduce Execution
 
 1. Check the Hadoop classpath
 ```
@@ -96,7 +96,7 @@ hadoop classpath
 hadoop jar wc.jar stubs.WordCount /user/hadoop/boardgamerev.csv wordcounts2
 ```
 
-#### Output Verification
+- #### Output Verification
 1. Check the Hadoop classpath
 ```
 # List the files in the output directory to verify the MapReduce job completion.
