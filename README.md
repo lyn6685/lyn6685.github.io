@@ -5,7 +5,9 @@ Implementation of MapReduce using both Java and Python in Hadoop to identify and
 This project will runs on a cluster of AWS EC2 instances with the SunU-Hadoop-Image v1.3 AMI, where it is configured with 1 master node and 3 slave nodes.
 
 ## How to run?
+
 ### Environment Setup
+
 1. Switch to Hadoop user
 ```
 # Switch to the Hadoop user to gain necessary permissions for Hadoop administration tasks.
