@@ -150,6 +150,6 @@ hadoop fs -ls /user/hadoop/pc4
 2. View the output content
 ```
 # Display the content of the output file to validate the results of the word count operation.
-hadoop fs -cat /user/hadoop/pc4/part-00000
+hadoop fs -cat /user/hadoop/pc4/part-00000| sort -k2,2nr | more
 ```
 
