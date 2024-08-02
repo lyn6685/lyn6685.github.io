@@ -7,7 +7,7 @@ This project will runs on a cluster of AWS EC2 instances with the SunU-Hadoop-Im
 ## How to run?
 
 
-### Environment Setup
+- ### Environment Setup
 
  1. Switch to Hadoop user
 ```
