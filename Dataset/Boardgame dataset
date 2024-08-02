@@ -3,4 +3,6 @@
 # We upload our dataset to the storage service
 
 # The below are the link to our dataset which have uploaded in Amazon S3 in bucket:
+# Additional: The link was added under the README.md page as well
+
 https://groupassignment24.s3.amazonaws.com/bgg-15m-reviews.csv 
