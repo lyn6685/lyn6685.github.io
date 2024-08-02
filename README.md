@@ -97,14 +97,36 @@ hadoop jar wc.jar stubs.WordCount /user/hadoop/boardgamerev.csv wordcounts2
 ```
 
 - #### Output Verification
-1. Check the Hadoop classpath
+1. List the output file
 ```
 # List the files in the output directory to verify the MapReduce job completion.
 hadoop fs -ls /user/hadoop/pc3
 ```
 
-2. Run the MapReduce job
+2. View the output content
 ```
 # Display the content of the output file to validate the results of the word count operation.
 hadoop fs -cat /user/hadoop/pc3/part-00000
 ```
+
+### _MapReduce Apporach Using *PYTHON* in Hadoop_
+
+- #### Output Verification
+
+
+
+
+
+- #### Output Verification
+1. List the output file
+```
+# List the files in the output directory to verify the MapReduce job completion.
+hadoop fs -ls /user/hadoop/pc4
+```
+
+2. View the output content
+```
+# Display the content of the output file to validate the results of the word count operation.
+hadoop fs -cat /user/hadoop/pc4/part-00000
+```
+
