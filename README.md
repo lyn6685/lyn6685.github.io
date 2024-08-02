@@ -7,9 +7,9 @@ This project will runs on a cluster of AWS EC2 instances with the SunU-Hadoop-Im
 ## How to run?
 
 
-- ### Environment Setup
+> ### Environment Setup
 
-> 1. Switch to Hadoop user
+ 1. Switch to Hadoop user
 ```
 # Switch to the Hadoop user to gain necessary permissions for Hadoop administration tasks.
 sudo su - hadoop
