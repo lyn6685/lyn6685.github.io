@@ -90,8 +90,17 @@ ls stubs
 # Ensure all necessary Hadoop libraries and dependencies are available.
 hadoop classpath
 ```
-
-2. Run the MapReduce job
+2. Compile the Java source files for the word count program
+```
+# Compile the Java source files in the 'stubs' directory.
+javac -classpath `hadoop classpath` stubs/*.java
+```
+3. Create a JAR file from the compiled Java classes
+```
+# Package the compiled Java classes into a JAR file named 'wc.jar'.
+jar cvf wc.jar stubs/*.class
+```
+4. Run the MapReduce job
 ```
 # Execute the MapReduce job, specifying the input dataset and output directory.
 hadoop jar wc.jar stubs.WordCount /user/hadoop/boardgamerev.csv wordcounts2
