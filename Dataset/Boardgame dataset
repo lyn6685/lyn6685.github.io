@@ -1,5 +1,6 @@
-# The github having limit 
+# The GitHub has a file size limit for individual files that can vary according to the plan. 
+# Thus, our group choose to use a third-party storage service such as Amazon S3 
+# We upload our dataset to the storage service
 
 # The below are the link to our dataset which have uploaded in Amazon S3 in bucket:
-
 https://groupassignment24.s3.amazonaws.com/bgg-15m-reviews.csv 
