@@ -1,1 +1,64 @@
 
+# Switch to the Hadoop user to gain necessary permissions for Hadoop administration tasks.
+sudo su - hadoop
+
+# Format the HDFS namenode to set up the filesystem for data storage across the cluster.
+hdfs namenode -format
+
+# Start all Hadoop services, including HDFS and YARN, to ensure the system is fully operational.
+start-all.sh
+
+# Change directory to the course-specific directory for subsequent operations.
+cd IST3134/
+
+# Download the dataset from the specified URL to the local system.
+wget https://groupassignment24.s3.amazonaws.com/boardgamerev.csv
+
+# List the details of the downloaded file to ensure it was successfully downloaded.
+ls -latrh boardgamerev.csv
+
+# Upload the dataset to HDFS for distributed storage and processing.
+hadoop fs -put boardgamerev.csv /user/hadoop/
+
+# Verify the dataset is successfully uploaded to the HDFS directory.
+hadoop fs -ls /user/hadoop/
+
+# Unzip the project archive containing the word count program files.
+unzip wordcount.zip
+
+# Create a dedicated workspace directory for the MapReduce project.
+mkdir ~/workspace
+
+# Copy the word count project files to the new workspace.
+cp -r wordcount/ ~/workspace/
+
+# Change to the source directory containing the Java code for the word count program.
+cd ~/workspace/wordcount/src
+
+# List the contents of the stubs directory to confirm the presence of necessary files.
+ls stubs
+
+# Ensure all necessary Hadoop libraries and dependencies are available.
+hadoop classpath
+
+# Execute the MapReduce job, specifying the input dataset and output directory.
+hadoop jar wc.jar stubs.WordCount /user/hadoop/boardgamerev.csv wordcounts2
+
+# List the files in the output directory to verify the MapReduce job completion.
+hadoop fs -ls /user/hadoop/pc3
+
+# Display the content of the output file to validate the results of the word count operation.
+hadoop fs -cat /user/hadoop/pc3/part-00000
+
+
+
+
+
+
+
+
+
+
+
+
+
