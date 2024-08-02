@@ -9,7 +9,7 @@ This project will runs on a cluster of AWS EC2 instances with the SunU-Hadoop-Im
 
 ### _Environment Setup_
 
- [^1] Switch to Hadoop user
+ 1. Switch to Hadoop user
 ```
 # Switch to the Hadoop user to gain necessary permissions for Hadoop administration tasks.
 sudo su - hadoop
@@ -33,7 +33,7 @@ start-all.sh
 cd IST3134/
 ```
 
-### Dataset Preparation
+### _Dataset Preparation_
 
 1. Download the dataset (Boardgame)
 ```
@@ -56,7 +56,7 @@ hadoop fs -put boardgamerev.csv /user/hadoop/
 hadoop fs -ls /user/hadoop/
 ```
 
-### Project Setup
+### _Project Setup_
 1. Unzip the word count project file
 ```
 # Unzip the project archive containing the word count program files.
@@ -80,9 +80,10 @@ cd ~/workspace/wordcount/src
 # List the contents of the stubs directory to confirm the presence of necessary files.
 ls stubs
 ```
-### MapReduce Apporach Using *JAVA* in Hadoop
+### _MapReduce Apporach Using *JAVA* in Hadoop_
 
 #### MapReduce Execution
+
 1. Check the Hadoop classpath
 ```
 # Ensure all necessary Hadoop libraries and dependencies are available.
