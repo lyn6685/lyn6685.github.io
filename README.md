@@ -107,7 +107,7 @@ hadoop fs -ls /user/hadoop/wordcounts2
 2. View the output content
 ```
 # Display the content of the output file to validate the results of the word count operation.
-hadoop fs -cat /user/hadoop/wordcounts2/part-r-00000
+hadoop fs -cat /user/hadoop/wordcounts2/part-r-00000| sort -k2,2nr | more
 ```
 
 ### _MapReduce Apporach Using *PYTHON* in Hadoop_
