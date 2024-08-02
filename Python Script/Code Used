@@ -28,5 +28,4 @@ hadoop jar /home/hadoop/hadoop-3.2.2/share/hadoop/tools/lib/hadoop-streaming-3.2
 hadoop fs -ls /user/hadoop/pc4
 
 # Display the content of the output file to validate the results of the word count operation.
-hadoop fs -cat /user/hadoop/pc4/part-00000
-
+hadoop fs -cat /user/hadoop/pc4/part-00000| sort -k2,2nr | more
