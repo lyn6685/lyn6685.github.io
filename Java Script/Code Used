@@ -44,12 +44,10 @@ hadoop classpath
 hadoop jar wc.jar stubs.WordCount /user/hadoop/boardgamerev.csv wordcounts2
 
 # List the files in the output directory to verify the MapReduce job completion.
-hadoop fs -ls /user/hadoop/pc3
+hadoop fs -ls /user/hadoop/wordcounts2
 
 # Display the content of the output file to validate the results of the word count operation.
-hadoop fs -cat /user/hadoop/pc3/part-00000
-
-
+hadoop fs -cat /user/hadoop/wordcounts2/part-r-00000
 
 
 
