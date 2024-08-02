@@ -113,17 +113,31 @@ hadoop fs -cat /user/hadoop/pc3/part-00000
 
 - #### Create Workspace
 ```
-# Create a dedicated workspace directory for the MapReduce project.
+# Create a 'python' directory in the workspace to store the MapReduce project files.
 mkdir ~/workspace/python
 
-# Copy the word count project files to the new workspace.
+# Navigate to the newly created 'python' directory.
 cd ~/workspace/python
 ```
 
+- #### Mapper and Reducer Script Creation
+1. Create mapper and reducer scripts
+```
+# Open nano text editor to create the 'mapper.py' script.
+nano mapper.py
 
+# Open nano text editor to create the 'reducer.py' script.
+nano reducer.py
+```
+2. Mapper Scripts (_mapper.py_)
+   
+3. Reducer Scripts (_reducer.py_)
 
-
-
+- #### Mapreduce Execution
+```
+# Run the MapReduce job, specifying the input file, output directory, mapper, and reducer scripts.
+hadoop jar /home/hadoop/hadoop-3.2.2/share/hadoop/tools/lib/hadoop-streaming-3.2.2.jar -input boardgamerev.csv -output pc4 -file mapper.py -file reducer.py -mapper mapper.py -reducer reducer.py
+```
 
 - #### Output Verification
 1. List the output file
