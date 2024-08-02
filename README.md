@@ -128,7 +128,7 @@ cd ~/workspace/python
 nano mapper.py
 ```
 
-2. Mapper Scripts (_mapper.py_)
+2. Mapper scripts (_mapper.py_)
 ```
 #!/usr/bin/env python3
 import sys
@@ -145,7 +145,7 @@ for line in sys.stdin:
 nano reducer.py
 ```
  
-4. Reducer Scripts (_reducer.py_)
+4. Reducer scripts (_reducer.py_)
 ```
 #!/usr/bin/env python3
 import sys
