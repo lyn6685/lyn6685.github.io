@@ -1,5 +1,5 @@
 # About this
-Implementation of MapReduce using both Java in Hadoop to identify and calculate the word count for boardgame review data.
+Implementation of MapReduce using both Java and Python in Hadoop to identify and calculate the word count for boardgame review data.
 
 # Background
 This project will runs on a cluster of AWS EC2 instances with the SunU-Hadoop-Image v1.3 AMI, where it is configured with 1 master node and 3 slave nodes.
@@ -77,8 +77,9 @@ cd ~/workspace/wordcount/src
 # List the contents of the stubs directory to confirm the presence of necessary files.
 ls stubs
 ```
+### MapReduce Apporach Using *JAVA* in Hadoop
 
-### MapReduce Execution
+#### MapReduce Execution
 1. Check the Hadoop classpath
 ```
 # Ensure all necessary Hadoop libraries and dependencies are available.
@@ -91,7 +92,7 @@ hadoop classpath
 hadoop jar wc.jar stubs.WordCount /user/hadoop/boardgamerev.csv wordcounts2
 ```
 
-### Output Verification
+#### Output Verification
 1. Check the Hadoop classpath
 ```
 # List the files in the output directory to verify the MapReduce job completion.
