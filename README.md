@@ -122,14 +122,12 @@ cd ~/workspace/python
 ```
 
 - #### Mapper and Reducer Script Creation
-1. Create mapper and reducer scripts
+1. Create mapper scripts
 ```
 # Open nano text editor to create the 'mapper.py' script.
 nano mapper.py
-
-# Open nano text editor to create the 'reducer.py' script.
-nano reducer.py
 ```
+
 2. Mapper Scripts (_mapper.py_)
 ```
 #!/usr/bin/env python3
@@ -141,8 +139,13 @@ for line in sys.stdin:
     for word in words:
         print('%s\t%s' % (word, 1))
 ```
-   
-3. Reducer Scripts (_reducer.py_)
+3. Create reducer scripts
+```
+# Open nano text editor to create the 'reducer.py' script.
+nano reducer.py
+```
+ 
+4. Reducer Scripts (_reducer.py_)
 ```
 #!/usr/bin/env python3
 import sys
