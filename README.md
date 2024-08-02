@@ -1,5 +1,6 @@
 # About this
 Implementation of MapReduce using both Java and Python in Hadoop to identify and calculate the word count for boardgame review data.
+The link to our dataset which uploaded using the Amazon S3: https://groupassignment24.s3.amazonaws.com/bgg-15m-reviews.csv 
 
 # Background
 This project will runs on a cluster of AWS EC2 instances with the SunU-Hadoop-Image v1.3 AMI, where it is configured with 1 master node and 3 slave nodes.
