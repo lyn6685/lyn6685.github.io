@@ -1,4 +1,3 @@
-
 # Switch to the Hadoop user to gain necessary permissions for Hadoop administration tasks.
 sudo su - hadoop
 
