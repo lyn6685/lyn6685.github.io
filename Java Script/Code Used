@@ -40,6 +40,12 @@ ls stubs
 # Ensure all necessary Hadoop libraries and dependencies are available.
 hadoop classpath
 
+# Compile the Java source files in the 'stubs' directory.
+javac -classpath `hadoop classpath` stubs/*.java
+
+# Package the compiled Java classes into a JAR file named 'wc.jar'.
+jar cvf wc.jar stubs/*.class
+
 # Execute the MapReduce job, specifying the input dataset and output directory.
 hadoop jar wc.jar stubs.WordCount /user/hadoop/boardgamerev.csv wordcounts2
 
