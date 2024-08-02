@@ -111,7 +111,15 @@ hadoop fs -cat /user/hadoop/pc3/part-00000
 
 ### _MapReduce Apporach Using *PYTHON* in Hadoop_
 
-- #### Output Verification
+- #### Create Workspace
+```
+# Create a dedicated workspace directory for the MapReduce project.
+mkdir ~/workspace/python
+
+# Copy the word count project files to the new workspace.
+cd ~/workspace/python
+```
+
 
 
 
