@@ -39,7 +39,7 @@ cd IST3134/
 1. Download the dataset (Boardgame)
 ```
 # Download the dataset from the specified URL to the local system.
-wget https://groupassignment24.s3.amazonaws.com/boardgamerev.csv
+wget https://groupassignment24.s3.amazonaws.com/bgg-15m-reviews.csv
 ```
 
 2. Verify the download
